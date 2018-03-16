@@ -37,5 +37,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mListButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
